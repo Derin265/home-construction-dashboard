@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: aliceblue;
+  font-family: "Montserrat", sans-serif;
+}
+.dashboard {
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+/*-Navigation-*/
+.dashboard .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-top: 10px;
+}
+.dashboard .navigation img.logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 16px;
+}
+.dashboard .navigation img.user {
+  width: 36px;
+  height: 36px;
+  border-radius: 16px;
+}
+.dashboard .navigation div span {
+  font-size: 24px;
+  padding: 16px;
+  color: #727272;
+}
+.dashboard .navigation div span:hover {
+  opacity: 0.2;
+}
+
+/*--Main--*/
+/*Search */
+.dashboard .main .search form {
+  margin-top: 60px;
+  position: relative;
+}
+.dashboard .main .search form input {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 10px 10px 60px;
+  background: rgba(0 0 0 /0);
+  border: 1px solid #dadadada;
+  border-radius: 5px;
+}
+
+.dashboard .main .search form i {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  color: #727272;
+}
+.dashboard .main .search form span {
+  right: 15px;
+  position: absolute;
+  top: 10px;
+  color: #727272;
+}
+.dashboard .main .search form span:nth-child(1) {
+  padding-right: 20px;
+}
+/*--TITLE-*/
+
+.dashboard .main .title {
+  font-size: 30px;
+  margin-top: 30px;
+}
+.dashboard .main label {
+  margin-top: 20px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.dashboard .main select {
+  margin-top: 20px;
+  border: none;
+  font-size: 15px;
+  background-color: transparent;
+}
+.dashboard .main .phases-list .individual-phases h2 {
+  line-height: 0px;
+}
+.dashboard .main .phases-list .individual-phases ul {
+  color: #727272;
+  list-style-type: none;
+  margin-left: 0;
+}
+.dashboard .main .phases-list .individual-phases {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 30px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 0px 10px 10px 0px;
+}
+.dashboard .main .phases-list .individual-phases .heading {
+  padding-left: 70px;
+}
+
+.dashboard .main .phases-list .individual-phases .category {
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  position: absolute;
+  top: 50px;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.dashboard .main .phases-list .individual-phases div.heading ul.activity {
+  list-style-type: none;
+  margin-left: 0px;
+  padding-left: 0px;
+  text-indent: 0;
+}
+
+.dashboard .main .phases-list .individual-phases span {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+}
+.dashboard .main .phases-list .individual-phases span:hover {
+  opacity: 0.1;
+}
+.dashboard .secondary .chart {
+  background-color: white;
+}
+.dashboard .secondary .chart .complete {
+  text-align: center;
+}
+
+.dashboard .secondary .list-beginning.recent-project {
+  background-color: white;
+  margin-top: 30px;
+  position: relative;
+}
+.dashboard .secondary .recent-project .title {
+  padding-left: 30px;
+  font-size: 10px;
+}
+.dashboard .secondary .list-beginning .recent-project .listing {
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+.dashboard .secondary .list-beginning .recent-project .listing span {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.dashboard .secondary .list-beginning .recent-project .circle {
+  width: 16px;
+  height: 16px;
+  background-color: green;
+  border-radius: 16px;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .dashboard .main .phases-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+  .dashboard .main .phases-list .individual-phases {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .dashboard {
+    display: flex;
+  }
+  .dashboard .navigation {
+    display: block;
+    position: fixed;
+    width: 10%;
+    left: 0px;
+    z-index: 10px;
+    background-color: transparent;
+  }
+  .dashboard .navigation span {
+    display: block;
+    margin-top: 0px;
+  }
+  .dashboard .navigation {
+    margin-top: 0px;
+
+    margin-bottom: 0px;
+  }
+  .dashboard .navigation div span {
+    margin-top: 10vh;
+  }
+  .dashboard .navigation img.user {
+    padding-bottom: 0px;
+    margin-bottom: -90px;
+  }
+  .dashboard section.main {
+    width: 50%;
+    margin-left: 30px;
+    padding-left: 30px;
+  }
+  .dashboard .main .phases-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 30px;
+    width: 150%;
+  }
+  .dashboard .main .phases-list .individual-phases {
+    width: 30%;
+  }
+  .dashboard .secondary {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: #ffffff;
+    padding-top: 10px;
+    position: fixed;
+    right: -100px;
+    width: 30%;
+    display: block;
+    height: 100%;
+  }
+  .secondary .chart {
+    width: 40%;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-right: 20%;
+    margin-left: 20%;
+  }
+  .secondary .chart h2 {
+    text-align: center;
+  }
+
+  .secondary .recent-project .listing {
+    padding-left: 5px;
+  }
+  section.secondary .recent-project {
+    width: 55%;
+    margin-top: 30px;
+  }
+
+  section.secondary .recent-project:nth-child(3) {
+    display: none;
+  }
+
+  section.secondary .recent-project listing .fa {
+    margin-top: 15px;
+  }
+}
