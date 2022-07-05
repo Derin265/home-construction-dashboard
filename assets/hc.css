@@ -29,7 +29,7 @@ body {
   border-radius: 16px;
 }
 .dashboard .navigation div span {
-  font-size: 24px;
+  font-size: 36px;
   padding: 16px;
   color: #727272;
 }
@@ -130,7 +130,7 @@ body {
 .dashboard .main .phases-list .individual-phases span:hover {
   opacity: 0.1;
 }
-.dashboard .secondary .chart {
+.dashboard .secondary {
   background-color: white;
 }
 .dashboard .secondary .chart .complete {
@@ -138,7 +138,7 @@ body {
 }
 
 .dashboard .secondary .list-beginning.recent-project {
-  background-color: white;
+  background-color: transparent;
   margin-top: 30px;
   position: relative;
 }
@@ -148,7 +148,7 @@ body {
 }
 .dashboard .secondary .list-beginning .recent-project .listing {
   background-color: white;
-  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -168,98 +168,43 @@ body {
   top: 50px;
   left: 0px;
 }
-
 @media only screen and (min-width: 768px) {
-  .dashboard .main .phases-list {
+  .dashboard .phases-list {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 30px;
+    flex-wrap: wrap;
   }
-  .dashboard .main .phases-list .individual-phases {
-    width: 30%;
+  .dashboard .phases-list .individual-phases {
+    width: 45%;
+    margin: 0 auto;
+  }
+  .ashboard .secondary {
+    display: flex;
+    width: 50%;
+    flex-wrap: nowrap;
   }
 }
-
 @media only screen and (min-width: 1024px) {
-  .dashboard {
+  .dashboard .phases-list {
     display: flex;
-  }
-  .dashboard .navigation {
-    display: block;
-    position: fixed;
-    width: 10%;
-    left: 0px;
-    z-index: 10px;
-    background-color: transparent;
-  }
-  .dashboard .navigation span {
-    display: block;
-    margin-top: 0px;
-  }
-  .dashboard .navigation {
-    margin-top: 0px;
-
-    margin-bottom: 0px;
-  }
-  .dashboard .navigation div span {
-    margin-top: 10vh;
-  }
-  .dashboard .navigation img.user {
-    padding-bottom: 0px;
-    margin-bottom: -90px;
-  }
-  .dashboard section.main {
-    width: 50%;
-    margin-left: 30px;
-    padding-left: 30px;
-  }
-  .dashboard .main .phases-list {
-    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-right: 30px;
-    width: 150%;
   }
-  .dashboard .main .phases-list .individual-phases {
+  .dashboard .phases-list .individual-phases {
     width: 30%;
+    margin: 0 auto;
   }
-  .dashboard .secondary {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    background: #ffffff;
-    padding-top: 10px;
+  .dashboard .main {
+    width: 60%;
+    margin-right: 0px;
+    margin-left: 90px;
+  }
+  section.secondary {
+    padding-top: 0px;
+    width: 27%;
     position: fixed;
-    right: -100px;
-    width: 30%;
-    display: block;
-    height: 100%;
-  }
-  .secondary .chart {
-    width: 40%;
-    padding-top: 30px;
-    margin-top: 30px;
-    margin-right: 20%;
-    margin-left: 20%;
-  }
-  .secondary .chart h2 {
-    text-align: center;
-  }
-
-  .secondary .recent-project .listing {
-    padding-left: 5px;
-  }
-  section.secondary .recent-project {
-    width: 55%;
-    margin-top: 30px;
-  }
-
-  section.secondary .recent-project:nth-child(3) {
-    display: none;
-  }
-
-  section.secondary .recent-project listing .fa {
-    margin-top: 15px;
+    right: 0px;
+    top: 100px;
+    background-color: transparent;
   }
 }

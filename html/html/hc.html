@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+sss<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,17 +10,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
 
   </head>
 
   <body>
     <div class="dashboard">
+  
       <section class="navigation">
         <!--Navigation Starts-->
         <img src="/assets/logo.png" alt="" class="logo"/>
@@ -36,7 +37,6 @@
 
       <section class="main"><!--Main Start-->
       
-
         <!--Search start-->
         <div class="search">       
            <form action="">
@@ -51,10 +51,8 @@
           </div>
         <!--Search End-->
 
-        <div class="Phases">
-          <!--House Construction Phases-->
+          <div class="title">House Construction
 
-          <div class="title">House Construction</div>
           <label for="">Sort through:</label>
           <select name="" id="">
             <option value="">Phase 1</option>
@@ -62,6 +60,7 @@
             <option value="">Phase 3</option>
             <option value="">Phase 4</option>
           </select>
+        </div>
 
           <div class="phases-list"><!--Phase List Start-->
 
@@ -85,7 +84,10 @@
   
   </div>                <!--Heading End-->
   
+            <div>
               <span class="fa fa-plus"></span>
+
+            </div> 
 
             
             
@@ -95,12 +97,12 @@
           <div class="individual-phases">            <!--Phase 2 Start-->
 
             <div class="category "></div>
-         <div class="heading"> <!--Heading start-->  
-                   <h2>Phase 2:</h2>
+          <div class="heading">
+          <h2>Phase 2:</h2>
           <p>Slab Phase</p>
-          <p> Of total budget: 15%;
-          <ul class="activity">
+          <p> Of total budget: 15%;</p>
 
+          <ul class="activity">
             <li>         Measure out the design on the site</li>
             <li>           Pour the footings,under slab drainage, moisture barrier and special mesh for termite protection.
             </li>
@@ -119,9 +121,8 @@
         <div class="heading">  
               <h2>Phase 3:</h2>
           <p>  Frame stage</p>
-          
           <p> Of total budget:20%
-            </p></p>
+          
           <ul class="activity">
         <li> Install your internal and external support structure,
              along with walls,
@@ -132,7 +133,7 @@
     </div>
       
     
-    <span class="fa fa-plus"></span>
+   <div><span class="fa fa-plus"></span></div>
     
   </div>            <!--Phase 3 End-->
 
@@ -144,13 +145,14 @@
       <h2>Phase 4:</h2>
       <p> Lockup stage</p>
       <p>Of total budget:20%</p>
+
       <ul class="activity">
-    
     <li>It's also safe for plumbers, electricians, cabinet makers and other tradesman to begin fitting out the property.</li>
       </ul>
   </div>
   
-    <span class="fa fa-plus"></span>
+    <div>    <span class="fa fa-plus"></span>
+    </div>
 
 
 </div>            <!--Phase 4 End-->
@@ -161,15 +163,17 @@
     <div class="heading"> 
        <h2>Phase 5:</h2>
       <p>Fix-out or fixing stage</p>
-      
       <p>Of total budget: 30%</p>
+
       <ul class="activity">
         <li>Install plumbing, electrical (including lights and powerpoints) and other fixtures and fittings</li>
-          <li>Add design features such as cornices,tiling,cabinets and shelving,reveals and achitraves.</li>  
+          <li>Add design features such as cornices,tiling,cabinets and 
+            shelving,reveals and achitraves.</li>  
       </ul>
     </div>
   
-<span class="fa fa-plus"></span>
+<div><span class="fa fa-plus"></span>
+</div>
 
 </div>            <!--Phase 5 End-->
 
@@ -177,30 +181,33 @@
 <div class="individual-phases">            <!--Phase  6 Start-->
 
     <div class="category"></div>
-    <div class="heading">  <h2>Phase 6:</h2>
+    <div class="heading"> 
+       <h2>Phase 6:</h2>
       <p> Practical completion Stage</p>
       <p>Of total budget:10%</p>
+
       <ul class="activity">
         <li>
             Congratulations! All painting, installations and detailing have been completed and you’re effectively ready to move in. </li>
         </ul>
     </div>
-<span class="fa fa-plus"></span>
+<div><span class="fa fa-plus"></span></div>
+
 
 </div>            <!--Phase 6 End-->
 
         </div>        <!---Phase list End-->
-        </div>
+  
      </section>      <!--Main End-->
 
     
      <section class="secondary"><!--Secondary Start-->
-<div class="chart">
+     <div class="chart">
     <h2>Phases Completed</h2>
     <canvas id="myChart" width="400" height="400"></canvas>
     <div class="complete">
-      <h3>3  Complete</h3>
-      <p>from 3 Phases</p>
+      <h3>2  Complete</h3>
+      <p>from 2 Phases</p>
     </div>
      </div>
 
@@ -231,15 +238,7 @@
         
       </div><!--Recent Phases End-->
 
-      
-
-  
-
-
-
-
-
-</div><!--List End-->
+  </div><!--List End-->
 
      </section><!--Secondary End-->
     </div>    <!--Dashboard End-->
